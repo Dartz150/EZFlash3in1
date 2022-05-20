@@ -37,6 +37,7 @@ respective menus.
 
  # Credits
 - EZTeam
-- GBATemp users "RoMee", "FAST6191" and "how_do_i_do_that" for keeping track of this particular expansion flashcard until recent days.
+- GBATemp users "RoMee", "FAST6191" and for keeping track of this particular expansion flashcard until recent days.
+- "how_do_i_do_that" [for his great documentation and guides.](https://gbatemp.net/threads/how-to-tell-which-version-of-the-3in1-you-have.130659/)
 - Rudolph and Cory for their tools and documentation. 
 - Yasu (Usay)

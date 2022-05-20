@@ -3,7 +3,7 @@
 
 # EZFlash3in1
 Source code for NOR/PSRAM data writing in all EZ-Flash3in1 models, has support for all existing flash chip models (v1,v2,v3).
-With this, you can implement EZ-Flash3in1 support to your NDS homebrew projects.
+With this, you can implement EZ-Flash3in1 support to your NDS homebrew projects. SRAM patching is not included, so you have to implement your own solution for proper saving support.
 
 ## **What is this for?**
 

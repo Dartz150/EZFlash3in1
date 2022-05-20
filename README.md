@@ -34,3 +34,9 @@ respective menus.
 
 ## Standalonde Loaders that currently have *partial* EZ-Flash3in1 support
 - [GBALdr](https://www.gamebrew.org/wiki/GBALdr) by cory1492
+
+ # Credits
+- EZTeam
+- GBATemp users "RoMee", "FAST6191" and "how_do_i_do_that" for keeping track of this particular expansion flashcard until recent days.
+- Rudolph and Cory for their tools and documentation. 
+- Yasu (Usay)

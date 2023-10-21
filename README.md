@@ -26,13 +26,13 @@ respective menus.
 ## Kernels that currently have *partial* EZ-Flash3in1 support (v1 only)
 - Wood based Clones (Ace3DS+)
 - WAIO
-- YSMenu (SRAM Autopatch is not supported, needs to be made manually on PC.)
+- YSMenu (SRAM Autopatch is not supported, needs to be made manually externally.)
 
-## Standalonde Loaders that currently have *full* EZ-Flash3in1 support 
+## Standalone Loaders that currently have *full* EZ-Flash3in1 support 
 - [GBAExploader](https://www.gamebrew.org/wiki/GBA_exploader) by Rudolph
 - [GBA Backup Tool](https://www.gamebrew.org/wiki/GBA_Backup_Tool) by Rudolph
 
-## Standalonde Loaders that currently have *partial* EZ-Flash3in1 support
+## Standalone Loaders that currently have *partial* EZ-Flash3in1 support
 - [GBALdr](https://www.gamebrew.org/wiki/GBALdr) by cory1492
 
  # Credits

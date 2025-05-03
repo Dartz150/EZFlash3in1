@@ -8,10 +8,11 @@
 
 #include "nds.h"
 
-	#ifdef __cplusplus
-	extern "C" {
-	#endif
+#ifdef __cplusplus
+extern "C" {
+#endif
 
+// Type definitions (if not already defined)
 #ifndef BYTE
 typedef unsigned char BYTE;
 #endif
@@ -25,41 +26,42 @@ typedef unsigned long DWORD;
 #endif
 
 #ifndef BOOL
-typedef bool BOOL ;
+typedef bool BOOL;
 #endif
-// export interface
 
+//--------------------------------------------------------------------------------------------------
+// DS Basic Operations
 
+// Basic ARM7 IRQ
+void Enable_Arm7DS(void);
 
+// Basic ARM9 IRQ
+void Enable_Arm9DS(void);
 
-//---------------------------------------------------
-//DS Basic Ops
-		//Basic ARM7 irq
-		void		Enable_Arm7DS(void);
+//--------------------------------------------------------------------------------------------------
+// NOR Flash / PSRAM Functions
 
-		//Basic Arm9 irq
-		void		Enable_Arm9DS(void);
+#define FlashBase   0x08000000
+#define _Ez5PsRAM   0x08000000
 
-		
-		//NORFlash/PSRAM Functions
-#define FlashBase		0x08000000
-#define	_Ez5PsRAM 	0x08000000
-		void		OpenNorWrite();
-		void		CloseNorWrite();
-		void      SetRompage(u16 page);
-		void 		SetRampage(u16 page);
-		void  	OpenRamWrite();
-		void 		CloseRamWrite();
-		void      SetSerialMode();
-		uint32   ReadNorFlashID();
-		void 		chip_reset();
-		void 		Block_Erase(u32 blockAdd);
-		void 		ReadNorFlash(u8* pBuf,u32 address,u16 len);
-		void 		WriteNorFlash(u32 address,u8 *buffer,u32 size);
-		void 		WriteSram(uint32 address, u8* data , uint32 size );
-		void 		ReadSram(uint32 address, u8* data , uint32 size );
-		void 		SetShake(u16 data);
-	#ifdef __cplusplus
-	}
-	#endif
+void OpenNorWrite(void);
+void CloseNorWrite(void);
+void SetRompage(u16 page);
+void SetRampage(u16 page);
+void OpenRamWrite(void);
+void CloseRamWrite(void);
+void SetSerialMode(void);
+uint32 ReadNorFlashID(void);
+void chip_reset(void);
+void Block_Erase(u32 blockAdd);
+void ReadNorFlash(u8* pBuf, u32 address, u16 len);
+void WriteNorFlash(u32 address, u8* buffer, u32 size);
+void WriteSram(uint32 address, u8* data, uint32 size);
+void ReadSram(uint32 address, u8* data, uint32 size);
+void SetShake(u16 data);
+
+#ifdef __cplusplus
+}
 #endif
+
+#endif // NDS_DSCARD_V2_INCLUDE
